@@ -15,18 +15,19 @@ const TextContainet = styled.div`
     padding-left: 0.5rem;
 `;
 
-const Text = styled.h1`
-    font-size: ${(props) => props.fontSize}px;
+export const Text = styled.h1`
+    font-size: ${(props) => props.fontSize}rem;
+    font-weight: ${(props) => props.fontWeight};
 `;
 
-export default function Logo() {
+export function Logo() {
     return (
         <>
             <Wrapper>
                 <FaJsSquare size={50}></FaJsSquare>
                 <TextContainet>
-                    <Text fontSize={30}>Jecav Yadav</Text>
-                    <Text fontSize={16}>Digital Media Expert</Text>
+                    <Text fontSize={3}>Jecav Yadav</Text>
+                    <Text fontSize={1.6}>Digital Media Expert</Text>
                 </TextContainet>
             </Wrapper>
         </>

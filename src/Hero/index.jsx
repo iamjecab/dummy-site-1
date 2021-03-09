@@ -1,15 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import Heading from "../Components/Heading";
 import Links from "../Components/Links";
 
-import Logo from "../Components/Logo";
+import { Logo } from "../Components/Logo";
 
 // url="https://source.unsplash.com/501x500"
 
 const Wrapper = styled.div`
-    background-image: url("https://source.unsplash.com/1920x1080");
+    background-image: url("https://source.unsplash.com/1920x1080/?digitalmarketing, seo");
     height: 100vh;
     width: 100vw;
+    background-attachment: fixed;
 `;
 
 const Header = styled.header`
@@ -30,6 +32,7 @@ export default function Hero() {
                     <Logo></Logo>
                     <Links></Links>
                 </Header>
+                <Heading></Heading>
             </Wrapper>
         </>
     );
