@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { Text } from "./Logo";
 
 const Wrapper = styled.div`
+    width: 100%;
+    height: 100%;
     padding: 40rem 0 0 25rem;
     /* &::last-child {
         padding-top: 8rem;
@@ -12,7 +14,7 @@ const Wrapper = styled.div`
     }
 `;
 
-const Button = styled.button`
+export const Button = styled.button`
     border: 0.2rem solid black;
     padding: 1.4rem 2.9rem;
     font-size: 1.6rem;

@@ -10,7 +10,7 @@ import { Logo } from "../Components/Logo";
 const Wrapper = styled.div`
     background-image: url("https://source.unsplash.com/1920x1080/?digitalmarketing, seo");
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-attachment: fixed;
 `;
 
