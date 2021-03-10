@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
+import Icons from "./Icons";
 
 const Wrapper = styled.div`
     display: flex;
@@ -16,26 +17,27 @@ const Home = styled.h1`
     }
 `;
 
-const IconContainer = styled.div`
-    svg {
-        margin-right: 1.3rem;
-        cursor: pointer;
-        :hover {
-            color: white;
-        }
-    }
-`;
+// const IconContainer = styled.div`
+//     svg {
+//         margin-right: 1.3rem;
+//         cursor: pointer;
+//         :hover {
+//             color: white;
+//         }
+//     }
+// `;
 
 export default function Links() {
     return (
         <>
             <Wrapper>
                 <Home>HOME</Home>
-                <IconContainer>
+                {/* <IconContainer>
                     <FaFacebookF size={18}></FaFacebookF>
                     <FaTwitter size={18}></FaTwitter>
                     <FaYoutube size={18}></FaYoutube>
-                </IconContainer>
+                </IconContainer> */}
+                <Icons></Icons>
             </Wrapper>
         </>
     );

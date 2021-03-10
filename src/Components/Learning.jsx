@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Text } from "./Logo";
+import { Button } from "./Heading";
 
 const Wrapper = styled.div`
     padding: 0 17%;
@@ -36,6 +37,11 @@ const SmallText = styled.h1`
     color: black;
 `;
 
+const ButtonLearing = styled(Button)`
+    margin: 0 0 2rem 53rem;
+    padding: 1.1rem 2.9rem;
+`;
+
 export default function Learning() {
     return (
         <>
@@ -64,6 +70,7 @@ export default function Learning() {
                         </SmallText>
                     </LargeText>
                 </InfoWrapper>
+                <ButtonLearing>Reserve My Spot</ButtonLearing>
             </Wrapper>
         </>
     );
